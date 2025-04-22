@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Devi & Rio Wedding</title>
+    <!-- favicon -->
+    <link rel="icon" href="C:/xampp/htdocs/wedding/Proyek2/img/bg-img-master.jpg">
+    <!-- bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- bootstarp icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Playwrite+US+Trad:wght@100..400&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css" integrity="sha512-xtV3HfYNbQXS/1R1jP53KbFcU9WXiSA1RFKzl5hRlJgdOJm4OxHCWYpskm6lN0xp0XtKGpAfVShpbvlFH3MDAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fontawesome6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+     <link rel="stylesheet" href="C:/xampp/htdocs/wedding/Proyek2/css/style.css">
+  </head>
+  <body class="fit-to-content">
+    <!-- music -->
+     <audio src="C:/xampp/htdocs/wedding/Proyek2/music/Backsound.mp3" Loop class="music"></audio>
+     <!-- sfx door -->
+      <audio src="C:/xampp/htdocs/wedding/Proyek2/music/bird-sound.mp3" class="sound-door"></audio>
+
+    <!-- door section -->
+    <div id="door-section" class="open" onclick="mulai()">
+        <h1 class="heading-door left huruf-sambung">You are</h1>
+        <h1 class="heading-door right huruf-sambung">Invited to</h1>
+        <div class="doors">
+            <div class="door left">
+                <img src="C:/xampp/htdocs/wedding/Proyek2/img/letter-left.png" alt="left door">
+            </div>
+            <div class="door right">
+                <img src="C:/xampp/htdocs/wedding/Proyek2/img/letter-right.png" alt="right door">
+             </div>
+        </div>
+    </div>
+
+    <script>
+        // Define the mulai function
+        function mulai() {
+          // Add the desired functionality here, e.g.,
+          console.log("The 'mulai' function is now executing!");
+          // You might want to add code to play audio, show/hide elements, etc.
+        }
+      </script>
+
+    <!-- content section -->
+ <div id="content-section">
+    <!-- navbar -->
+     <ul class="nav">
+        <span class="nav-music"></span>
+        <li>
+            <a href="#pembuka-section">
+                <i class="fas fa-fw fa-calendar-day"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#acara-section">
+                <i class="fas fa-fw fa-location-dot"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#love-story-section">
+                <i class="fas fa-fw fa-heart"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-item-music rotate" id="music-button" onclick="toggleMusic(event)">
+                <i class="fas fa-fw fa-compact-disc"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#gallery-section">
+                <i class="fas fa-fw fa-image"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#gift-section">
+                <i class="fas fa-fw fa-gift"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#rsvp-section">
+                <i class="fas fa-fw fa-check-to-slot"></i>
+            </a>
+        </li>
+     </ul>
+
+    <!-- hero section -->
+    <section id="hero-section" class="d-flex align-items-center">
+        <img src="C:/xampp/htdocs/wedding/Proyek2/img/spk.gif" alt="=sparkle" class="sparkle">
+        <div class="container text-center">
+            <h5 class="my-2 text-white">Kepada yang terhormat Bapak/Ibu/Saudara/i <br> <span id="nama-sambutan"></span></h5>
+            <h1 class="my-2 text-white mt-3" >Devi & Rio</h1>
+            <h5 class="my-2 text-white">Dengan bahagia menyampaikan undangan</h5>
+            <a href="#info-section" class="rounded.pill btn btn.btn.lg btn-get-started py-3 mt-3" onclick="jumpToNextSection()"><i class="fas fa-fw fa-envelope-open-text"></i> Buka Undangan</a>
+        </div>
+    </section>
+
+    <!-- info section -->
+     <section id="info-section" class="info-section section-bg py-5">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="moving-background">
+                        <div class="section-title text-center">
+                            <h4 class="text-white huruf-sambung">Bismillahirrahmanirrahim</h4>
+                            <h4>
+                                وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ
+                            </h4>
+                            <p>
+                            Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.</p>
+                            <p>Ar-Rūm [30]:21</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- pembuka section -->
+    <section id="pembuka-section" class="pembuka-section section-bg py-5">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h1 class="text-green huruf-sambung">Happy Bride & Groom</h1>
+                    </div>
+
+
+                    <div class="row my-3 justify-content-between">
+                        <div class="col rounded" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                            <div class="image_2column left text-center">
+                                <img src="C:/xampp/htdocs/wedding/Proyek2/img/devi.jpg" width="50%" height="50%" alt="Devi Febrianti S.Pi"  class="img-fluid rounded-circle">  
+                            </div>
+                            <div class="p-2 pt-3 text-center">
+                                <h2 class="text-center">Devi Febrianti, S.Pi</h2>
+                                <p>Anak pertama dari</p>
+                                <p>Bapak Darimin <br> & <br> Ibu Rubayati (Ahua)</p>
+                                <a href="https://www.instagram.com/dviifbrnt?utm_source=qr&igsh=MThpaWx1NnVpa2xiZA==" class="btn btn-lg btn-green rounded-circle" target="_blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-1 my-auto" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                            <h1 class="text-green text-center mt-3 mb-3"><i class="bi bi-heart-fill"></i></h1>
+                        </div>
+                        <div class="col rounded" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                            <div class="image_2column right text-center">
+                                <img src="C:/xampp/htdocs/wedding/Proyek2/img/rio.jpg" width="50%" height="50%" alt="Rio" class="img-fluid rounded-circle">  
+                            </div>
+                            <div class="p-2 pt-3 text-center">
+                                <h2 class="text-center">Mallyo</h2>
+                                <p>Anak ke enam dari</p>
+                                <p>Bapak Mat Resat (Alm) <br> & <br> Ibu Yantik</p>
+                                <a href="https://www.instagram.com/mallyo_04?utm_source=qr&igsh=MXg5ejVhZGc5ODFnaA==" class="btn btn-lg btn-green rounded-circle" target="_blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- acara section -->
+    <section id="acara-section" class="acara-section py-5">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h1 class="text-green huruf-sambung fw-bold mb-5">Wedding Event</h1>
+                        <div class="moving-background">
+                        <h3 class="fw-bold gradient-text">We are close to the special day</h3>
+                        <div class="timebox mt-3 text-white" >
+                            <div class="time">
+                                <h6 id="days">00</h6>
+                                <p class="mt-0">Hari</p>
+                            </div>
+                            <div class="time">
+                                <h6 id="hours">00</h6>
+                                <p class="mt-0">Jam</p>
+                            </div>
+                            <div class="time">
+                                <h6 id="minutes">00</h6>
+                                <p class="mt-0">Menit</p>
+                            </div>
+                            <div class="time">
+                                <h6 id="seconds">00</h6>
+                                <p class="mt-0">Detik</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between px-3 text-center">
+                        <div class="col-lg-6 border my-2 rounded p-3 card-acara" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                            <h4>Akad Nikah</h4>
+                            <hr>
+                            <p><i class="fas fa-fw fa-calendar-day"></i> Kamis, 8 Mei 2025</p>
+                            <p><i class="fas fa-fw fa-clock"></i> 09.00 WIB</p>
+                            <p><i class="fas fa-fw fa-location-dot"></i> Kediaman mempelai wanita <br> Beringin Jaya RT/RW 03/03, Sepempang</p>
+                            <a href="https://maps.app.goo.gl/1Pg6GtCYESkKuwcL8" class="btn btn-lg btn-green rounded-pill" target="_blank">
+                                <i class="fas fa-fw fa-location-dot"></i> Location
+                            </a>
+                        </div>
+
+                        <div class="col-lg-6 border my-2  rounded p-3 card-acara" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                            <h4>Resepsi</h4>
+                            <hr>
+                            <p><i class="fas fa-fw fa-calendar-day"></i> Kamis, 8 Mei 2025</p>
+                            <p><i class="fas fa-fw fa-clock"></i> 11.00 WIB</p>
+                            <p><i class="fas fa-fw fa-location-dot"></i> Kediaman mempelai wanita <br> Beringin Jaya RT/RW 03/03, Sepempang</p>
+                            <a href="https://maps.app.goo.gl/1Pg6GtCYESkKuwcL8" class="btn btn-lg btn-green rounded-pill" target="_blank">
+                                <i class="fas fa-fw fa-location-dot"></i> Location
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- love story section -->
+    <section id="love-story-section" class="love-story-section py-5">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="section-title">
+                <h1 class="text-green huruf-sambung fw-bold">Our Love Story</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg">
+                    <ul class="timeline">
+                        <li data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                            <div class="timeline-badge" style="background-image:url('img/timeline/first.jpg');">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h5 class="timeline-title">Awal Pertemuan</h5>
+                                    <span class="timeline-date">25 Januari 2023</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Kisah kami berawal dari pertemuan sebagai rekan kerja. Rio yang saat itu sebagai staff baru mengajak berkenalan. Kami saling berdiskusi seputar pekerjaan hingga berlanjut komunikasi yang lebih intens.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="timeline-inverted" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                            <div class="timeline-badge" style="background-image:url('img/timeline/berpisah.jpg');">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h5 class="timeline-title">Lost Contact</h5>
+                                    <span class="timeline-date">14 Mei 2023</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Devi memutuskan untuk resign dan komunikasi kami tidak berlanjut. Kami melanjutkan hidup masing-masing tanpa mengetahui kabar dan kehidupan satu sama lain.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                            <div class="timeline-badge" style="background-image:url('img/timeline/second.jpg');">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h5 class="timeline-title">Kembali Bertemu</h5>
+                                    <span class="timeline-date">Agustus 2023</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Kami kembali melakukan komunikasi untuk mengetahui kabar satu sama lain dan mulai berbagi cerita lebih jauh. Saling bercerita bagaimana kehidupan kami selama tidak saling berkomunikasi.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="timeline-inverted" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                            <div class="timeline-badge" style="background-image:url('img/timeline/kembali.jpg');">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h5 class="timeline-title">Menjalin Hubungan</h5>
+                                    <span class="timeline-date">September 2023</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Satu bulan setelah kembali berkomunikasi, kami menyadari perasaan cinta yang mulai tumbuh dan memutuskan untuk menjalin hubungan. Saling berbagi cerita dan membangun cerita bersama.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                            <div class="timeline-badge" style="background-image:url('img/timeline/tunangan.jpg');">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3 class="timeline-title">Tunangan</h3>
+                                    <span class="timeline-date">15 Februari 2025</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Kami terus belajar saling mengenali dan memahami hingga memutuskan untuk mengikat hubungan kami. Rio dengan keseriusannya membawa keluarganya bertemu keluarga Devi dan menyampaikan niat baiknya. </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="timeline-inverted" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+                            <div class="timeline-badge" style="background-image:url('img/timeline/pernikahan.jpg');">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h5 class="timeline-title">Pernikahan</h5>
+                                    <span class="timeline-date">8 Mei 2025</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Di tengah kesibukan kami, banyak tantangan yang kami hadapi. Berbagai masalah yang silih berganti menguji hubungan kami. Seiring penyelesaian tantangan-tantangan tersebut, kami menyadari bahwa cinta kami tidak pernah pudar melainkan semakin menguatkannya. Dengan keyakinan dan atas izin-Nya, kami siap untuk menjalankan ibadah terpanjang bersama.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallerry section -->
+    <section id="gallery-section" class="gallery-section py-5 section-bg">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="section-title">
+                <h3 class="huruf-sambung text-green fw-bold">Gallery</h3>
+             </div>
+            <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/1.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/1.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/3.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/3.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/30.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/30.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/5.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/5.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/6.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/6.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/7.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/7.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/8.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/8.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/9.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/9.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/10.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/10.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/11.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/11.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/21.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/21.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/14.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/14.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/15.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/15.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/17.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/17.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/18.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/18.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/19.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/19.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/20.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/20.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/12.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/12.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/22.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/22.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-4">
+                    <a href="C:/xampp/htdocs/wedding/Proyek2/img/galeri/23.jpg" data-lightbox="devirio" class="text-decoration-none">
+                        <img src="C:/xampp/htdocs/wedding/Proyek2/img/galeri/23.jpg" alt="Devi dan Rio" class="card-img border-green">
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gift section -->
+        <section id="gift-section" class="gift-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title">
+                            <h3 class="huruf-sambung text-green fw-bold">Wedding Gift</h3>
+                            <p>Doa dan restu anda merupakan karunia yang sangat berarti bagi kami. Jika memberi adalah ungkapan tanda kasih, anda dapat memberi kado secara cashless</p>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 text-center">
+                                <button type="button" class="text-center btn btn-lg btn-green mb-4 rounded-pill" data-bs-toggle="collapse" data-bs-target="#collapseHadiah"><i class="fas fa-fw fa-gift"></i>Kirim Hadiah</button>
+                                <div class="collapse" id="collapseHadiah">
+                                    <div class="my-4 mx-auto position-relative credit-card">
+                                    <img src="img/mandiri.png" alt="Logo Mandiri" class="card-logo">
+                                    <div class="card-container">
+                                        <img src="img/sim.png" alt="sim" class="card-sim">
+                                        <div class="card-number">1090019068220</div>
+                                    </div>
+                                    <div class="card-name mt-2">Devi Febrianti</div>
+                                    <a style="cursor: pointer;" onclick="copyText(this)" class="copy-button btn btn-light mt-3">
+                                        <i class="fas fa-fw fa-copy"></i>
+                                        Copy
+                                    </a>
+                                </div>
+
+                                <div class="my-4 mx-auto position-relative credit-card">
+                                    <img src="img/bri.png" alt="Logo BRI" class="card-logo">
+                                    <div class="card-container">
+                                    <img src="img/sim.png" alt="sim" class="card-sim">
+                                    <div class="card-number">3282 0103 9798 536</div>
+                                    </div>
+                                    <div class="card-name mt-2">Devi Febrianti</div>
+                                    <a style="cursor: pointer;" onclick="copyText(this)" class="copy-button btn btn-light mt-3">
+                                    <i class="fas fa-fw fa-copy"></i>
+                                    Copy
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- rsvp section -->
+        <section id="rsvp-section" class="rsvp-section section-bg py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center">
+                            <h3 class="text-green huruf-sambung fw-bold">RSVP</h3>
+                            <p>Isi form dibawah ini untuk konfirmasi kehadiran anda.</p>
+                        </div>
+                        <form action="https://script.google.com/macros/s/AKfycbyySsPP-DxCo7stvD07ozNqp74JdIU1vNdzS2lgLM1QbDFLk4w45CCbV8VNAx_amDgLuw/exec" method="POST" id="rsvp-form" class="row row-cols-md-auto g-3 align-items-center justify-content-center">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="nama">Nama</label>
+                                    <input type="text" id="nama" name="nama" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="jumlah">Jumlah</label>
+                                    <input type="number" id="jumlah" name="jumlah" class="form-control" required min="1" max="5" Length="1" value="1">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="status">Status</label>
+                                    <select name="status" id="status" class="form-select" required>
+                                        <option value="0">--- Pilih salah satu ---</option>
+                                        <option value="Hadir">Hadir</option>
+                                        <option value="Tidak Hadir">Tidak Hadir</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <div class="mt-2">
+                                    <button type="submit" class="btn btn-kirim"><i class="fas fa-fw fa-paper-plane"></i> Kirim</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row mt-5">
+                            <div class="col-lg-12">
+                                <div class="container">
+                                <h5 class="text-center huruf-sambung">Wedding Wishes</h5>
+                                <div class="comment-box">
+                                    <input type="text" id="nameInput" placeholder="Nama anda">
+                                    <textarea id="commentInput" placeholder="Tulis ucapan anda..."></textarea>
+                                    <button class="tex-center" id="submitComment"><i class="fas fa-fw fa-paper-plane"></i> Beri ucapan</button>
+                                </div>
+                                <div id="commentsSection">
+                                    <h4>Wishes:</h4>
+                                    <ul id="commentsList"></ul>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- penutup section -->
+        <section id="penutup-section" class="penutup-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center">
+                            <h3 class="huruf-sambung fw-bold">Thankyou</h3>
+                            <p>Merupakan suatu kebahagian dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir pada hari bahagia kami. Terima kasih atas segala ucapan, doa, dan perhatiannya.</p>
+                            <h6 class="my-3">Kami yang Berbahagia</h6>
+                            <h1 class="text-green fw-bold gradient-text">Devi & Rio</h1>
+                            <img src="img/last.jpg" alt="DevidanRio" height="50%" width="80%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        </div>
+
+
+
+    <!-- jquery3 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- lightbox2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js" integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- sweetalert2 -->
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.all.min.js
+    "></script>
+    <!-- masonry -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <!-- js -->
+     <script src="C:/xampp/htdocs/wedding/Proyek2/js/script.js"></script>
+
+  </body>
+</html>
